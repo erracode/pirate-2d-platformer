@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://h0u6yr6elok1"]
+
+[ext_resource type="Texture2D" uid="uid://2be24rxwycip" path="res://icon.svg" id="1_bo7ot"]
+[ext_resource type="PackedScene" uid="uid://3fljrk1i566p" path="res://Scenes/Characters/player.tscn" id="2_mnu2n"]
+[ext_resource type="Script" uid="uid://c2yxhnuen6kx6" path="res://Scripts/player.gd" id="3_g0573"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8asdn"]
+size = Vector2(129.306, 126)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Hola mundo :)"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(590, 588)
+scale = Vector2(9.1875, 1)
+texture = ExtResource("1_bo7ot")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+shape = SubResource("RectangleShape2D_8asdn")
+
+[node name="Player" parent="." instance=ExtResource("2_mnu2n")]
+position = Vector2(590, 444)
+_acceleration = 600.0
+_deceleration = 1200.0
+
+[node name="PlayerNode" type="Node" parent="Player"]
+script = ExtResource("3_g0573")
