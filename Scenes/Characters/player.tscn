@@ -19,23 +19,6 @@
 [ext_resource type="Texture2D" uid="uid://e86tcfvythqx" path="res://Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/05-Ground/Ground 01.png" id="17_m75h8"]
 [ext_resource type="Texture2D" uid="uid://dsa220aavrp82" path="res://Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/05-Ground/Ground 02.png" id="18_2dmea"]
 
-[sub_resource type="Animation" id="Animation_lml76"]
-resource_name = "idle"
-length = 0.5
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("1_4flbx"), ExtResource("3_yt1oc"), ExtResource("4_jnx77"), ExtResource("5_hy8lp"), ExtResource("6_uxymp")]
-}
-
 [sub_resource type="Animation" id="Animation_ste30"]
 length = 0.001
 tracks/0/type = "value"
@@ -49,40 +32,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [ExtResource("1_4flbx")]
-}
-
-[sub_resource type="Animation" id="Animation_6kewp"]
-resource_name = "run"
-length = 0.6
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("7_fepmq"), ExtResource("8_ddhxa"), ExtResource("9_3k74t"), ExtResource("10_v8iml"), ExtResource("11_ojpki"), ExtResource("12_rv8bj")]
-}
-
-[sub_resource type="Animation" id="Animation_j3fsp"]
-resource_name = "jump"
-length = 0.3
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("13_inlw8"), ExtResource("14_f2s78"), ExtResource("15_hwltk")]
 }
 
 [sub_resource type="Animation" id="Animation_2davj"]
@@ -117,6 +66,57 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [ExtResource("17_m75h8"), ExtResource("18_2dmea")]
+}
+
+[sub_resource type="Animation" id="Animation_lml76"]
+resource_name = "idle"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_4flbx"), ExtResource("3_yt1oc"), ExtResource("4_jnx77"), ExtResource("5_hy8lp"), ExtResource("6_uxymp")]
+}
+
+[sub_resource type="Animation" id="Animation_j3fsp"]
+resource_name = "jump"
+length = 0.3
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("13_inlw8"), ExtResource("14_f2s78"), ExtResource("15_hwltk")]
+}
+
+[sub_resource type="Animation" id="Animation_6kewp"]
+resource_name = "run"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("7_fepmq"), ExtResource("8_ddhxa"), ExtResource("9_3k74t"), ExtResource("10_v8iml"), ExtResource("11_ojpki"), ExtResource("12_rv8bj")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5ehh5"]
